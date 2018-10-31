@@ -5,16 +5,17 @@ class Earthquakes extends Component {
   render() {
     const quakeList = this.props.earthquakes.map((earthquakes, i) => {
       return (
-        <div key={i}>
-        <h1> Earthquakes Container </h1>
-        <h2> Title: {earthquakes.properties.title} </h2>
-        <h2> coordinates: {earthquakes.geometry.coordinates} </h2>
-        <h2> Time: {earthquakes.properties.time} </h2>
-        </div>
+        <li key={i}>
+        Earthquakes Container <br/>
+        Title: {earthquakes.properties.title} <br/>
+        coordinates: {earthquakes.geometry.coordinates} <br/>
+        Time: {earthquakes.properties.time} <br/>
+        </li>
       )
     });
     return(
       <div>
+      <h1> Earthquakes </h1>
       {quakeList}
       </div>
     )

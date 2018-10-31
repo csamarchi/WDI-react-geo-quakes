@@ -34,11 +34,11 @@ class App extends Component {
     return (
       <div className="app">
         <div className="mapContainer">
-          <Map />
+          <Map earthquakes={this.state.earthquakes}/>
         </div>
         <div className="quakeContainer">
           <h1>Earthquakes from the past week: </h1>
-          // <Earthquakes earthquakes={this.state.earthquakes}/>
+          <Earthquakes earthquakes={this.state.earthquakes}/>
         </div>
       </div>
     );
